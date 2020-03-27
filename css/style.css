@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400i,700i,900i");
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.title {
+  z-index: 99999;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  position: absolute;
+}
+.title:hover h1 {
+  opacity: 0.2;
+}
+.title:hover a {
+  border-bottom: none;
+}
+.title:hover a:before {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f85032), to(#2783e6));
+  background-image: linear-gradient(to bottom, #f85032 0%, #2783e6 100%);
+}
+.title p {
+  max-width: 300px;
+  line-height: 140%;
+  color: white;
+}
+.title span {
+  color: white;
+  opacity: 0.5;
+  display: block;
+  margin-bottom: 10px;
+  font-size: 12px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.title a {
+  text-decoration: none;
+  border-bottom: 2px solid white;
+  color: white;
+  font-size: 58px;
+  font-weight: 900;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.title a:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: .3em;
+  right: 0;
+  bottom: .1em;
+  left: 0;
+  z-index: -1;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f85032), to(#2783e6));
+  background-image: linear-gradient(to bottom, #f85032 0%, #2783e6 100%);
+}
